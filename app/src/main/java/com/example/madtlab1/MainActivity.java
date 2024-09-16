@@ -33,5 +33,14 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText("Button Clicked!");
             }
         });
+
+        Button buttonChangeColor = findViewById(R.id.button2);
+        buttonChangeColor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setTextColor(getResources().getColor(android.R.color.holo_red_dark));
+            }
+        });
+
     }
 }
